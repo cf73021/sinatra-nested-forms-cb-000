@@ -1,9 +1,9 @@
 
 require './environment'	require './environment'
- module FormsLab	module FormsLab
-  class App < Sinatra::Base	  class App < Sinatra::Base
+module FormsLab
+class App < Sinatra::Base
      get '/' do
-    # code other routes/actions here	      erb :root
+       erb :root
      end
   end
 end	    get '/new' do
@@ -19,4 +19,4 @@ end	    get '/new' do
     end
 
   end
-end 
+end
